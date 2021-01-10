@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app"></div>
+
+<!-- 添加React的依赖 -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+
+    class App extends React.Component {
+
+        constructor() {
+            super();
+
+            this.state = {
+
+                arrays: ["A", "B", "C", "D"]
+            }
+        }
+
+        render() {
+
+            const liArray = [];
+
+            /*
+            * of 循环 获取的是item in 循环获取的是index
+            * */
+            for (let l of this.state.arrays) {
+                liArray.push(<li>{l}</li>)
+            }
+
+            return (
+                <div>
+                    <h2>列表1</h2>
+                    <ul>
+                        {liArray}
+                    </ul>
+
+                    <h2>列表2</h2>
+                    <ul>
+                        {
+                            /*
+                            *  回调函数有三个参数:
+                            *  参数一: 执行时的对应元素
+                            *  参数二: 对应的下标值
+                            *  参数三: 完整的数组对象
+                            * map((item, index, arr)
+                            *
+                            * */
+                            this.state.arrays.map((item) => {
+                                return <li>{item}</li>
+                            })
+                        }
+                    </ul>
+                </div>
+            )
+        }
+
+    }
+
+    ReactDOM.render(<App/>, document.getElementById("app"))
+
+</script>
+
+</body>
+</html>
