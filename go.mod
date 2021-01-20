@@ -1,1 +1,0 @@
-module "react-study"
