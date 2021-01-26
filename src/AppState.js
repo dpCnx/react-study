@@ -33,5 +33,12 @@ export default class AppState extends React.Component {
                 count: prestate.count + 1
             }
         })
+
+        // 2.推荐修改值得方式
+        const newFriends = [...this.state.friends];
+        newFriends.push({name: "tom", age: 30});
+        this.setState({
+            friends: newFriends
+        })
     }
 }
