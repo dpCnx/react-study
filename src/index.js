@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './AppeventBus';
+import App from './App受控组件';
 import './demo/style.css'
 
 ReactDOM.render(
