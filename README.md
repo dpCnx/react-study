@@ -7,6 +7,7 @@ create-react-app 项目名称
 yarn start
 yarn install 安装缺失的依赖
 yarn add events 添加events依赖
+yarn add styled-components 添加CSS-in-JS
 ```
 
 ```
