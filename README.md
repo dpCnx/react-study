@@ -8,6 +8,10 @@ yarn start
 yarn install 安装缺失的依赖
 yarn add events 添加events依赖
 yarn add styled-components 添加CSS-in-JS
+yarn add classnames 安装classnames
+yarn add antd 安装antd
+yarn add @ant-design/icons 安装icons
+yarn add moment 安装moment
 ```
 
 ```
