@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './css/styled-components/index';
+import App from './antd_demo/App';
+import 'antd/dist/antd.css'
 import './demo/style.css'
 
 ReactDOM.render(
