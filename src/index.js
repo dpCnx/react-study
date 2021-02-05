@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './antd_demo/App';
+import App from './axios_demo/App';
 import 'antd/dist/antd.css'
 import './demo/style.css'
 
