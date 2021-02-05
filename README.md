@@ -12,6 +12,7 @@ yarn add classnames 安装classnames
 yarn add antd 安装antd
 yarn add @ant-design/icons 安装icons
 yarn add moment 安装moment
+yarn add axios 安装axios
 ```
 
 ```
