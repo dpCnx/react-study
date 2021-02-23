@@ -13,6 +13,7 @@ yarn add antd 安装antd
 yarn add @ant-design/icons 安装icons
 yarn add moment 安装moment
 yarn add axios 安装axios
+yarn add redux 安装redux
 ```
 
 ```
