@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './axios_demo/App';
-import 'antd/dist/antd.css'
-import './demo/style.css'
+import App from './react_redux2/pages/home';
+import {Provider} from 'react-redux'
+import store from './react_redux2/store/index'
+/*import 'antd/dist/antd.css'
+import './demo/style.css'*/
 
 ReactDOM.render(
-    <React.StrictMode>
+    <Provider store={store}>
         <App/>
-    </React.StrictMode>,
+    </Provider>,
     document.getElementById('root')
 );
